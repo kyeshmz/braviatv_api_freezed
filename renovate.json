@@ -1,0 +1,42 @@
+{
+	"extends": ["config:base"],
+	"timezone": "Asia/Tokyo",
+	"enabledManagers": ["npm", "pub", "asdf"],
+	"lockFileMaintenance": {
+		"enabled": true
+	},
+	"dependencyDashboard": false,
+	"packageRules": [
+		{
+			"matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+			"matchPackagePatterns": ["firebase"],
+			"groupName": "firebase",
+			"automerge": true
+		},
+		{
+			"matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+			"matchPackagePatterns": ["eslint"],
+			"groupName": "eslint",
+			"automerge": true
+		},
+		{
+			"matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+			"automerge": true
+		},
+		{
+			"matchPackagePatterns": ["*"]
+		},
+		{
+			"matchDepTypes": ["dependencies"],
+			"groupName": "dependencies",
+			"rangeStrategy": "pin"
+		},
+		{
+			"matchDepTypes": ["devDependencies"],
+			"groupName": "devDependencies",
+			"rangeStrategy": "update-lockfile"
+		}
+	],
+	"baseBranches": ["main", "master"],
+	"assignees": ["kyeshmz"]
+}
