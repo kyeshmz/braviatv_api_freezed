@@ -218,10 +218,10 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_hooks
-      sha256: "2b202559a4ed3656bbb7aae9d8b335fb0037b23acc7ae3f377d1ba0b95c21aec"
+      sha256: "4c56ded0082369d3c1021acf372b44f7a50b783254c86de5c735330e59d95b52"
       url: "https://pub.dev"
     source: hosted
-    version: "0.18.5+1"
+    version: "0.18.5"
   flutter_lints:
     dependency: "direct dev"
     description:
